@@ -20,27 +20,44 @@
     </header>
     <main>
         <h2>Recipe List</h2>
-            <section id="recipe-list">
-                <h3>Categories</h3>
-                <h4>Category 1</h4>
-                <ul>
-                    <li>Recipe 1: <a href="./recipes/test-recipe.html">Test Recipe</a></li>
-                    <li>Recipe 2: <a href="./recipes/test-recipe.html">Test Recipe</a></li>
-                    <li>Recipe 3: <a href="./recipes/test-recipe.html">Test Recipe</a></li>
-                    <li>Recipe 4: <a href="./recipes/test-recipe.html">Test Recipe</a></li>
-                </ul>
-                <h4>Category 2</h4>
-                <ul>
-                    <li>Recipe 1: <a href="./recipes/test-recipe.html">Test Recipe</a></li>
-                    <li>Recipe 2: <a href="./recipes/test-recipe.html">Test Recipe</a></li>
-                    <li>Recipe 3: <a href="./recipes/test-recipe.html">Test Recipe</a></li>
-                    <li>Recipe 4: <a href="./recipes/test-recipe.html">Test Recipe</a></li>
-                </ul>
-            </section>
+        <section id="recipe-list">
+            <h3>Categories</h3>
+            <h4>Category 1</h4>
+            <ul id="entradas">
+
+            </ul>
+            <h4>Category 2</h4>
+            <ul>
+                <li>Recipe 1: <a href="./recipes/recipe-page.html">Test Recipe</a></li>
+                <li>Recipe 2: <a href="./recipes/trecipe-page.htmlhtml">Test Recipe</a></li>
+                <li>Recipe 3: <a href="./recipes/recipe-page.html">Test Recipe</a></li>
+                <li>Recipe 4: <a href="./recipes/recipe-page.html">Test Recipe</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>Trademark 2025</p>
     </footer>
+    <script>
+        fetch('recipes/recipes.json')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(recipe => {
+                    const categoryList = document.getElementById(recipe.category);
+                    const recipeLi = document.createElement('li');
+
+                    const link = document.createElement('a');
+                    link.textContent = recipe.name;
+                    //link.href = `./recipes/${recipe.id}`;
+                    recipeLi.appendChild(link);
+
+                    container.appendChild(categoryList);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading recipes:', error);
+            });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+{
+    "id":"0",
+    "name":"Homus",
+    "category":"entradas",
+    "details":{
+        "prep-time":"10 min",
+        "portions":"6",
+        "source":"https://panelinha.com.br/receita/homus-a-jato"
+    },
+    "ingredients":{
+        "grão de bico cozido":"1 lata",
+        "tahine":"3 colheres (sopa)",
+        "caldo de limão":"1/2 unidade",
+        "alho":"1 dente",
+        "sal":"a gosto",
+        "agua":"a gosto"
+    },
+    "instructions":{
+        "1":"Passe o grão-de-bico por uma peneira e deixe escorrer bem a água.",
+        "2":"Transfira para uma tigela, junte o alho, o caldo de limão e o tahine.",
+        "3":"Bata com um mixer (se preferir use o processador) até ficar liso - adicione água aos poucos e vá batendo para ficar na consistência desejada (mais rústica ou mais lisa e cremosa). Tempere com sal a gosto, misture bem e sirva a seguir ou leve à geladeira."
+    }
+}
