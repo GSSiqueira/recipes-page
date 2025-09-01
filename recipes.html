@@ -29,7 +29,7 @@
             <h4>Category 2</h4>
             <ul>
                 <li>Recipe 1: <a href="./recipes/recipe-page.html">Test Recipe</a></li>
-                <li>Recipe 2: <a href="./recipes/trecipe-page.htmlhtml">Test Recipe</a></li>
+                <li>Recipe 2: <a href="./recipes/recipe-page.htmlhtml">Test Recipe</a></li>
                 <li>Recipe 3: <a href="./recipes/recipe-page.html">Test Recipe</a></li>
                 <li>Recipe 4: <a href="./recipes/recipe-page.html">Test Recipe</a></li>
             </ul>
@@ -39,7 +39,7 @@
         <p>Trademark 2025</p>
     </footer>
     <script>
-        fetch('recipes/recipes.json')
+        fetch('./recipes/recipes.json')
             .then(response => response.json())
             .then(data => {
                 data.forEach(recipe => {
