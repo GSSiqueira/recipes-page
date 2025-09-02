@@ -32,14 +32,14 @@
         </section>
     </main>
     <footer>
-        <p>Desenvolvido por <a href="https://github.com/GSSiqueira" target="_blank">Gabriel Siqueira</a> 2025</p>   
+        <p>Desenvolvido por <a href="https://github.com/GSSiqueira" target="_blank">Gabriel Siqueira</a> 2025</p>
     </footer>
     <script>
         fetch('./recipes/recipes.json')
             .then(response => response.json())
             .then(data => {
                 data.recipes.forEach(recipe => {
-                    
+
                     const categoryList = document.getElementById(recipe.category);
                     const recipeLi = document.createElement('li');
 

@@ -36,14 +36,14 @@
         </div>
         <section id="directions">
             <h3>Instruções</h3>
-    
+
         </section>
         <aside>
             <h5>Extras</h5>
         </aside>
     </main>
     <footer>
-                <p>Desenvolvido por <a href="https://github.com/GSSiqueira" target="_blank">Gabriel Siqueira</a> 2025</p>
+        <p>Desenvolvido por <a href="https://github.com/GSSiqueira" target="_blank">Gabriel Siqueira</a> 2025</p>
     </footer>
     <script>
         fetch('./recipes.json')
@@ -61,7 +61,7 @@
                     ingredientList.appendChild(li);
 
                 });
-                document.getElementById('ingredients').appendChild(ingredientList); 
+                document.getElementById('ingredients').appendChild(ingredientList);
 
                 document.getElementById('category').textContent = result.category;
                 document.getElementById('prep-time').textContent = result.details.prepTime;
