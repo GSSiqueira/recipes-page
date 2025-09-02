@@ -1,84 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes Page</title>
+    <title>Receitas do Siq</title>
     <link rel="stylesheet" href="../style.css?ver=1.0">
 </head>
 
 <body>
     <header>
-        <h1>Main Page Title</h1>
+        <h1>Receitas do Siq</h1>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../recipes.html">Recipes</a></li>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../recipes.html">Receitas</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2 id="recipe-title">Recipe Title</h2>
+        <h2 id="recipe-title">Título da Receita</h2>
         <div id="top-wrapper">
             <section id="ingredients">
-                <h3>Ingredients</h3>
-  
+                <h3>Ingredientes</h3>
             </section>
             <section id="details">
-                <h3>Detais</h3>
+                <h3>Detalhes</h3>
                 <ul>
-                    <li>Prep Time: 20min</li>
-                    <li>Portions: 5</li>
-                    <li>Source: <a href="#" target="_blank">Recipe Link</a></li>
+                    <li>Categoria: <span id="category"></span></li>
+                    <li>Tempo de preparo: <span id="prep-time"></span></li>
+                    <li>Porções: <span id="portions"></span></li>
+                    <li>Fonte: <a id="source" href="#" target="_blank">Acesse Aqui</a></li>
                 </ul>
             </section>
         </div>
         <section id="directions">
-            <h3>Directions</h3>
-            <h4>Step 1</h4>
-            <ol>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facilis dignissimos blanditiis
-                    tempora repellendus. Cum saepe optio cumque accusantium ipsam veritatis fuga aperiam praesentium.
-                    Corrupti beatae cum aut in sequi.</li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, illum doloremque vitae consectetur
-                    illo quia necessitatibus reiciendis repudiandae consequatur? Quo error eveniet corporis accusantium
-                    aut consequuntur, laborum omnis sit ex?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore recusandae, quas esse unde debitis
-                    culpa voluptate tempora, beatae facere doloribus rem ea at deserunt molestiae explicabo architecto,
-                    dolorem nostrum voluptatum.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima error quod vero fuga laboriosam
-                    officiis distinctio, quia ab amet omnis debitis aspernatur quae repellat eius! Cupiditate maxime
-                    soluta dicta quisquam?</li>
-            </ol>
-            <h4>Step 2</h4>
-            <ol>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident voluptas ex veniam
-                    molestiae velit incidunt necessitatibus eaque corporis beatae nisi repudiandae quaerat laborum
-                    sapiente sed, rerum animi, voluptate dolores?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cumque placeat natus autem deserunt
-                    provident eligendi perferendis impedit aspernatur excepturi. Adipisci itaque animi officiis aliquid
-                    necessitatibus sed dolorum dolorem voluptatem.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti ipsum facilis vel
-                    blanditiis voluptas nisi, laboriosam excepturi ipsam, quibusdam reiciendis corporis. Aliquid soluta
-                    laudantium sed ea laboriosam, nobis ad.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque vero ratione saepe doloremque
-                    perspiciatis atque corrupti esse dignissimos rerum id. Iure praesentium nesciunt magni recusandae
-                    ipsum neque quibusdam explicabo et!</li>
-            </ol>
+            <h3>Instruções</h3>
+    
         </section>
         <aside>
             <h5>Extras</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor optio esse dolores nobis mollitia ullam,
-                natus odit animi voluptatibus porro illo! Nesciunt quos alias debitis necessitatibus! Ipsam voluptatem
-                velit quo!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore modi illum ducimus deleniti nesciunt
-                dignissimos placeat fugiat ratione quae beatae nulla perferendis unde laboriosam suscipit, enim veniam
-                recusandae animi non.</p>
         </aside>
     </main>
     <footer>
-        <p>Trademark 2025</p>
+                <p>Desenvolvido por <a href="https://github.com/GSSiqueira" target="_blank">Gabriel Siqueira</a> 2025</p>
     </footer>
     <script>
         fetch('./recipes.json')
@@ -91,11 +56,26 @@
                 const ingredientList = document.createElement('ul');
                 result.ingredients.forEach(ingredient => {
                     const li = document.createElement('li');
-                    li.textContent = `${ingredient.name} : ${ingredient.amount} `;
+                    const name = ingredient.name.charAt(0).toUpperCase() + ingredient.name.slice(1);
+                    li.textContent = `${name} : ${ingredient.amount} `;
                     ingredientList.appendChild(li);
 
                 });
                 document.getElementById('ingredients').appendChild(ingredientList); 
+
+                document.getElementById('category').textContent = result.category;
+                document.getElementById('prep-time').textContent = result.details.prepTime;
+                document.getElementById('portions').textContent = result.details.portions;
+                const sourceLink = document.getElementById('source');
+                sourceLink.href = result.details.source;
+
+                const directionsList = document.createElement('ol');
+                Object.values(result.instructions).forEach(instruction => {
+                    const li = document.createElement('li');
+                    li.textContent = instruction;
+                    directionsList.appendChild(li);
+                });
+                document.getElementById('directions').appendChild(directionsList);
 
             })
             .catch(error => {

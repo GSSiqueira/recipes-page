@@ -101,6 +101,15 @@ footer > p{
     text-align: center;
 }
 
+footer a{
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
 ul,ol {
     list-style-position: inside;
 }

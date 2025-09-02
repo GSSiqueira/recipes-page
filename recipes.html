@@ -1,42 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes Page</title>
+    <title>Receitas do Siq</title>
     <link rel="stylesheet" href="style.css?ver=1.0">
 </head>
 
 <body>
     <header>
-        <h1>Main Page Title</h1>
+        <h1>Receitas do Siq</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="recipes.html">Receitas</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Recipe List</h2>
+        <h2>Lista de Receitas</h2>
         <section id="recipe-list">
-            <h3>Categories</h3>
-            <h4>Category 1</h4>
+            <h3>Categorias</h3>
+            <h4>Entradas</h4>
             <ul id="entradas">
 
             </ul>
-            <h4>Category 2</h4>
-            <ul>
-                <li>Recipe 1: <a href="./recipes/recipe-page.html">Test Recipe</a></li>
-                <li>Recipe 2: <a href="./recipes/recipe-page.htmlhtml">Test Recipe</a></li>
-                <li>Recipe 3: <a href="./recipes/recipe-page.html">Test Recipe</a></li>
-                <li>Recipe 4: <a href="./recipes/recipe-page.html">Test Recipe</a></li>
+            <h4>Pratos Principais</h4>
+            <ul id="pratos-principais">
             </ul>
         </section>
     </main>
     <footer>
-        <p>Trademark 2025</p>
+        <p>Desenvolvido por <a href="https://github.com/GSSiqueira" target="_blank">Gabriel Siqueira</a> 2025</p>   
     </footer>
     <script>
         fetch('./recipes/recipes.json')
