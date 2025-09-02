@@ -42,16 +42,17 @@
         fetch('./recipes/recipes.json')
             .then(response => response.json())
             .then(data => {
-                data.forEach(recipe => {
+                data.recipes.forEach(recipe => {
+                    
                     const categoryList = document.getElementById(recipe.category);
                     const recipeLi = document.createElement('li');
 
                     const link = document.createElement('a');
                     link.textContent = recipe.name;
-                    //link.href = `./recipes/${recipe.id}`;
+                    link.href = `./recipes/recipe-page.html?id=${recipe.id}`;
                     recipeLi.appendChild(link);
 
-                    container.appendChild(categoryList);
+                    categoryList.appendChild(recipeLi);
                 });
             })
             .catch(error => {

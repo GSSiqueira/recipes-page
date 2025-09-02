@@ -19,24 +19,11 @@
         </nav>
     </header>
     <main>
-        <h2>Recipe Title</h2>
+        <h2 id="recipe-title">Recipe Title</h2>
         <div id="top-wrapper">
             <section id="ingredients">
                 <h3>Ingredients</h3>
-                <h4>Step 1</h4>
-                <ul>
-                    <li>Ingredient 1: Amount</li>
-                    <li>Ingredient 2: Amount</li>
-                    <li>Ingredient 3: Amount</li>
-                    <li>Ingredient 4: Amount</li>
-                </ul>
-                <h4>Step 2</h4>
-                <ul>
-                    <li>Ingredient 1: Amount</li>
-                    <li>Ingredient 2: Amount</li>
-                    <li>Ingredient 3: Amount</li>
-                    <li>Ingredient 4: Amount</li>
-                </ul>
+  
             </section>
             <section id="details">
                 <h3>Detais</h3>
@@ -93,6 +80,28 @@
     <footer>
         <p>Trademark 2025</p>
     </footer>
+    <script>
+        fetch('./recipes.json')
+            .then(response => response.json())
+            .then(data => {
+                const recipeId = new URLSearchParams(window.location.search).get('id');
+                const result = data.recipes.filter(recipe => recipe.id === recipeId)[0];
+
+                document.getElementById('recipe-title').textContent = result.name;
+                const ingredientList = document.createElement('ul');
+                result.ingredients.forEach(ingredient => {
+                    const li = document.createElement('li');
+                    li.textContent = `${ingredient.name} : ${ingredient.amount} `;
+                    ingredientList.appendChild(li);
+
+                });
+                document.getElementById('ingredients').appendChild(ingredientList); 
+
+            })
+            .catch(error => {
+                console.error('Error loading recipes:', error);
+            });
+    </script>
 </body>
 
 </html>
