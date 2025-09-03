@@ -55,7 +55,6 @@
                 document.getElementById('recipe-title').textContent = result.name;
                 const ingredientList = document.createElement('ul');
                 for (step in result.ingredients) {
-                    console.log(step);
                     if (step !== "Completa") {
                         const stepTitle = document.createElement(h4);
                         stepTitle.textContent = `${step}`;
@@ -79,12 +78,18 @@
                 sourceLink.href = result.details.source;
 
                 const directionsList = document.createElement('ol');
-            
-                Object.values(result.instructions).forEach(instruction => {
-                    const li = document.createElement('li');
-                    li.textContent = instruction;
-                    directionsList.appendChild(li);
-                });
+                for (step in result.ingredients) {
+                    if (step !== "Completa") {
+                        const stepTitle = document.createElement(h5);
+                        stepTitle.textContent = `${step}`;
+                        document.getElementById('ingredients').appendChild(stepTitle);
+                    }
+                    Object.values(result.instructions[step]).forEach(instruction => {
+                        const li = document.createElement('li');
+                        li.textContent = instruction;
+                        directionsList.appendChild(li);
+                    });
+                }
                 document.getElementById('directions').appendChild(directionsList);
 
             })
