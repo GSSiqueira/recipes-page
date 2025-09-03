@@ -38,7 +38,11 @@
         fetch('./recipes/recipes.json')
             .then(response => response.json())
             .then(data => {
-                data.recipes.forEach(recipe => {
+
+                const orderedRecipes = data.recipes.sort((a, b) => {
+                    return a.name.localeCompare(b.name);
+                });
+                orderedRecipes.forEach(recipe => {
 
                     const categoryList = document.getElementById(recipe.category);
                     const recipeLi = document.createElement('li');
