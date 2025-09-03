@@ -27,7 +27,6 @@
             <section id="details">
                 <h3>Detalhes</h3>
                 <ul>
-                    <li>Categoria: <span id="category"></span></li>
                     <li>Tempo de preparo: <span id="prep-time"></span></li>
                     <li>Porções: <span id="portions"></span></li>
                     <li>Fonte: <a id="source" href="#" target="_blank">Acesse Aqui</a></li>
@@ -53,10 +52,10 @@
                 const result = data.recipes.filter(recipe => recipe.id === recipeId)[0];
 
                 document.getElementById('recipe-title').textContent = result.name;
-                const ingredientList = document.createElement('ul');
                 for (step in result.ingredients) {
+                    const ingredientList = document.createElement('ul');
                     if (step !== "Completa") {
-                        const stepTitle = document.createElement(h4);
+                        const stepTitle = document.createElement('h4');
                         stepTitle.textContent = `${step}`;
                         document.getElementById('ingredients').appendChild(stepTitle);
                     }
@@ -68,29 +67,28 @@
                         ingredientList.appendChild(li);
 
                     });
+                    document.getElementById('ingredients').appendChild(ingredientList);
                 }
-                document.getElementById('ingredients').appendChild(ingredientList);
 
-                document.getElementById('category').textContent = result.category;
                 document.getElementById('prep-time').textContent = result.details.prepTime;
                 document.getElementById('portions').textContent = result.details.portions;
                 const sourceLink = document.getElementById('source');
                 sourceLink.href = result.details.source;
 
-                const directionsList = document.createElement('ol');
                 for (step in result.ingredients) {
+                    const directionsList = document.createElement('ol');
                     if (step !== "Completa") {
-                        const stepTitle = document.createElement(h5);
+                        const stepTitle = document.createElement('h5');
                         stepTitle.textContent = `${step}`;
-                        document.getElementById('ingredients').appendChild(stepTitle);
+                        document.getElementById('directions').appendChild(stepTitle);
                     }
                     Object.values(result.instructions[step]).forEach(instruction => {
                         const li = document.createElement('li');
                         li.textContent = instruction;
                         directionsList.appendChild(li);
                     });
+                    document.getElementById('directions').appendChild(directionsList);
                 }
-                document.getElementById('directions').appendChild(directionsList);
 
             })
             .catch(error => {

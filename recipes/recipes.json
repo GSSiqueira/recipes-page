@@ -44,6 +44,122 @@
                     "3": "Bata com um mixer (se preferir use o processador) até ficar liso - adicione água aos poucos e vá batendo para ficar na consistência desejada (mais rústica ou mais lisa e cremosa). Tempere com sal a gosto, misture bem e sirva a seguir ou leve à geladeira."
                 }
             }
+        },
+        {
+            "id": "1",
+            "name": "Arroz árabe com carne moída e especiarias (hashweh)",
+            "category": "principais",
+            "details": {
+                "prepTime": "1h",
+                "portions": "4",
+                "source": "https://panelinha.com.br/receita/arroz-arabe-perfumado-com-carne-moida"
+            },
+            "ingredients": {
+                "Saladinha de Tomate": [
+                    {
+                        "name": "tomates maduros",
+                        "amount": "3 unidades"
+                    },
+                    {
+                        "name": "castanha-de-caju torrada sem sal picada",
+                        "amount": "¼ de xícara (chá)"
+                    },
+                    {
+                        "name": "azeite",
+                        "amount": "1 colher (sopa)"
+                    },
+                    {
+                        "name": "caldo de limão",
+                        "amount": "1 unidade"
+                    },
+                    {
+                        "name": "folhas de hortelã picadas",
+                        "amount": "a gosto"
+                    },
+                    {
+                        "name": "sal e pimenta-do-reino",
+                        "amount": "a gosto"
+                    }
+                ],
+                "Arroz": [
+                    {
+                        "name": "arroz",
+                        "amount": "1 xícara (chá)"
+                    },
+                    {
+                        "name": "água",
+                        "amount": "2 xícaras (chá)"
+                    },
+                    {
+                        "name": "patinho moído",
+                        "amount": "250 g"
+                    },
+                    {
+                        "name": "cebolas",
+                        "amount": "2 unidades"
+                    },
+                    {
+                        "name": "uva-passa branca",
+                        "amount": "¼ de xícara (chá)"
+                    },
+                    {
+                        "name": "manteiga",
+                        "amount": "3 colheres (sopa)"
+                    },
+                    {
+                        "name": "azeite",
+                        "amount": "1 colher (sopa)"
+                    },
+                    {
+                        "name": "folha de louro",
+                        "amount": "1 unidade"
+                    },
+                    {
+                        "name": "pimenta síria",
+                        "amount": "½ colher (chá)"
+                    },
+                    {
+                        "name": "cominho",
+                        "amount": "1 colher (chá)"
+                    },
+                    {
+                        "name": "páprica doce",
+                        "amount": "1 colher (chá)"
+                    },
+                    {
+                        "name": "canela em pó",
+                        "amount": "½ colher (chá)"
+                    },
+                    {
+                        "name": "açúcar",
+                        "amount": "1 pitada"
+                    },
+                    {
+                        "name": "sal e pimenta-do-reino",
+                        "amount": "a gosto"
+                    }
+                ]
+            },
+            "instructions": {
+                "Saladinha de Tomate": {
+                    "1": "Lave, seque e corte os tomates ao meio; descarte as sementes e corte cada metade em cubos de 0,5 cm.",
+                    "2": "Transfira para uma tigela, tempere com o azeite, o caldo de limão, sal e pimenta a gosto.",
+                    "3": "Misture as folhas de hortelã e deixe na geladeira enquanto prepara o arroz.",
+                    "4": "Na hora de servir, misture a castanha picada."
+                },
+                "Arroz": {
+                    "1": "Numa chaleira, leve um pouco mais de 2 xícaras (chá) de água ao fogo alto para ferver.",
+                    "2": "Leve uma panela pequena ao fogo baixo. Quando aquecer, regue com 1 colher (sopa) de azeite, junte o arroz, a folha de louro e refogue por 1 minuto para envolver os grãos com o azeite.",
+                    "3": "Meça 2 xícaras (chá) de água fervente e regue o arroz. Misture ½ colher (chá) de sal, aumente o fogo para médio e deixe cozinhar até a água atingir o nível do arroz.",
+                    "4": "Abaixe o fogo, tampe parcialmente a panela e deixe o arroz cozinhar até absorver toda a água. Desligue o fogo e mantenha a panela tampada por mais 5 minutos.",
+                    "5": "Enquanto o arroz cozinha, prepare a cebola. Descasque e fatie a cebola em meias-luas finas.",
+                    "6": "Leve uma frigideira grande com 2 colheres (sopa) de manteiga ao fogo médio. Quando derreter, acrescente a cebola, tempere com uma pitada de sal e de açúcar e deixe cozinhar por cerca de 15 minutos até caramelizar.",
+                    "7": "Afaste a cebola para a lateral da frigideira e acrescente mais 1 colher (sopa) de manteiga, junte a carne moída, tempere com a pimenta síria, o cominho, a páprica, a canela, 1 colher (chá) de sal, pimenta-do-reino e refogue por 5 minutos.",
+                    "8": "Junte a uva-passa e misture bem.",
+                    "9": "Solte os grãos de arroz com um garfo e acrescente ao refogado de carne, mexa por mais 5 minutos para absorver o sabor do refogado.",
+                    "10": "Regue com ¼ de xícara (chá) de água, desligue o fogo e misture bem para deixar o arroz úmido. Sirva a seguir com a saladinha de tomate."
+                }
+            }
         }
     ]
 }
