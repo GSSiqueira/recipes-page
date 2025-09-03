@@ -54,13 +54,22 @@
 
                 document.getElementById('recipe-title').textContent = result.name;
                 const ingredientList = document.createElement('ul');
-                result.ingredients.forEach(ingredient => {
-                    const li = document.createElement('li');
-                    const name = ingredient.name.charAt(0).toUpperCase() + ingredient.name.slice(1);
-                    li.textContent = `${name} : ${ingredient.amount} `;
-                    ingredientList.appendChild(li);
+                for (step in result.ingredients) {
+                    console.log(step);
+                    if (step !== "Completa") {
+                        const stepTitle = document.createElement(h4);
+                        stepTitle.textContent = `${step}`;
+                        document.getElementById('ingredients').appendChild(stepTitle);
+                    }
 
-                });
+                    result.ingredients[step].forEach(ingredient => {
+                        const li = document.createElement('li');
+                        const name = ingredient.name.charAt(0).toUpperCase() + ingredient.name.slice(1);
+                        li.textContent = `${name} : ${ingredient.amount} `;
+                        ingredientList.appendChild(li);
+
+                    });
+                }
                 document.getElementById('ingredients').appendChild(ingredientList);
 
                 document.getElementById('category').textContent = result.category;
@@ -70,6 +79,7 @@
                 sourceLink.href = result.details.source;
 
                 const directionsList = document.createElement('ol');
+            
                 Object.values(result.instructions).forEach(instruction => {
                     const li = document.createElement('li');
                     li.textContent = instruction;

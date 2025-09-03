@@ -9,37 +9,41 @@
                 "portions": "6",
                 "source": "https://panelinha.com.br/receita/homus-a-jato"
             },
-            "ingredients": [
-                {
-                    "name": "grão de bico cozido",
-                    "amount": "1 lata"
-                },
-                {
-                    "name": "tahine",
-                    "amount": "3 colheres (sopa)"
-                },
-                {
-                    "name": "caldo de limão",
-                    "amount": "1/2 unidade"
-                },
-                {
-                    "name": "alho",
-                    "amount": "1 dente"
-                },
-                {
-                    "name": "sal",
-                    "amount": "a gosto"
-                },
-                {
-                    "name": "agua",
-                    "amount": "a gosto"
-                }
-            ] ,
+            "ingredients": {
+                "Completa": [
+                    {
+                        "name": "grão de bico cozido",
+                        "amount": "1 lata"
+                    },
+                    {
+                        "name": "tahine",
+                        "amount": "3 colheres (sopa)"
+                    },
+                    {
+                        "name": "caldo de limão",
+                        "amount": "1/2 unidade"
+                    },
+                    {
+                        "name": "alho",
+                        "amount": "1 dente"
+                    },
+                    {
+                        "name": "sal",
+                        "amount": "a gosto"
+                    },
+                    {
+                        "name": "agua",
+                        "amount": "a gosto"
+                    }
+                ]
+            },
             "instructions": {
-                "1": "Passe o grão-de-bico por uma peneira e deixe escorrer bem a água.",
-                "2": "Transfira para uma tigela, junte o alho, o caldo de limão e o tahine.",
-                "3": "Bata com um mixer (se preferir use o processador) até ficar liso - adicione água aos poucos e vá batendo para ficar na consistência desejada (mais rústica ou mais lisa e cremosa). Tempere com sal a gosto, misture bem e sirva a seguir ou leve à geladeira."
+                "Completa": {
+                    "1": "Passe o grão-de-bico por uma peneira e deixe escorrer bem a água.",
+                    "2": "Transfira para uma tigela, junte o alho, o caldo de limão e o tahine.",
+                    "3": "Bata com um mixer (se preferir use o processador) até ficar liso - adicione água aos poucos e vá batendo para ficar na consistência desejada (mais rústica ou mais lisa e cremosa). Tempere com sal a gosto, misture bem e sirva a seguir ou leve à geladeira."
+                }
             }
         }
-        ]
+    ]
 }
