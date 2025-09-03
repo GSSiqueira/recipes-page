@@ -1,2 +1,2 @@
 # recipes-page
- Test page to save my recipes
+ Hi, I've made this page just to have an easy way to acess my favorite recipes from various webpages and videos. It's going to be a very simple project just to practice my HTML and CSS lessons. The database is curently just a JSON file that I've created with all the recipes. In the future this may change to an actual database, but for now its enought, there are not that many recipes to require an actual DB.
