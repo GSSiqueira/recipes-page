@@ -160,6 +160,68 @@
                     "10": "Regue com ¼ de xícara (chá) de água, desligue o fogo e misture bem para deixar o arroz úmido. Sirva a seguir com a saladinha de tomate."
                 }
             }
+        },
+        {
+            "id": "1",
+            "name": "Salsa Mexicana",
+            "category": "entradas",
+            "details": {
+                "prepTime": "5 min",
+                "portions": "4",
+                "source": "https://www.recipetineats.com/salsa-super-easy-restaurant-style/"
+            },
+            "ingredients": {
+                "Completa": [
+                    {
+                        "name": "cebola picada (branca, roxa ou amarela)",
+                        "amount": "1/4 xícara"
+                    },
+                    {
+                        "name": "tomate pelado enlatado",
+                        "amount": "400g"
+                    },
+                    {
+                        "name": "pimentas jalapeño em conserva",
+                        "amount": "120g"
+                    },
+                    {
+                        "name": "coentro picado grosseiramente",
+                        "amount": "1/4 xícara"
+                    },
+                    {
+                        "name": "suco de limão",
+                        "amount": "1/2 colher (sopa)"
+                    },
+                    {
+                        "name": "alho picado",
+                        "amount": "1 dente"
+                    },
+                    {
+                        "name": "açúcar",
+                        "amount": "1/2 colher (chá)"
+                    },
+                    {
+                        "name": "sal",
+                        "amount": "1/2 colher (chá)"
+                    },
+                    {
+                        "name": "pimenta-do-reino moída",
+                        "amount": "1/4 colher (chá)"
+                    },
+                    {
+                        "name": "cominho em pó",
+                        "amount": "1/4 colher (chá)"
+                    }
+                ]
+            },
+            "instructions": {
+                "Completa": {
+                    "1": "Coloque a cebola e a pimenta jalapeño no processador de alimentos primeiro, depois adicione os ingredientes restantes (comece com 1/2 colher de sopa de suco de limão).",
+                    "2": "Bata até obter a consistência desejada - o ideal é que fique bem lisa, pois realça o sabor da cebola, etc.",
+                    "3": "Prove com um salgadinho de milho para ajustar o sal e o limão, se necessário.",
+                    "4": "Leve à geladeira por 1 hora antes de servir com salgadinhos de milho ou outros acompanhamentos."
+                }
+            }
         }
     ]
 }
