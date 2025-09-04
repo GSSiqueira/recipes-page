@@ -92,7 +92,18 @@
 
                 const extras = document.getElementById("dicas");
                 if(result.extras){
-                    
+                    const extrasList =  document.createElement('ol');
+                    Object.values(result.extras).forEach(extra => {
+                        const li = document.createElement('li');
+                        li.textContent = extra;
+                        extrasList.appendChild(li);
+                    });
+                    extras.appendChild(extrasList);
+                }
+                else{
+                    const extrasText = document.createElement('p');
+                    extrasText.textContent = "Ainda não existem dicas para essa receita.";
+                    extras.appendChild(extrasText);
                 }
 
             })
