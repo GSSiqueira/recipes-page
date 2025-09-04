@@ -37,8 +37,8 @@
             <h3>Instruções</h3>
 
         </section>
-        <aside>
-            <h5>Extras</h5>
+        <aside id="dicas">
+            <h5>Dicas</h5>
         </aside>
     </main>
     <footer>
@@ -88,6 +88,11 @@
                         directionsList.appendChild(li);
                     });
                     document.getElementById('directions').appendChild(directionsList);
+                }
+
+                const extras = document.getElementById("dicas");
+                if(result.extras){
+                    
                 }
 
             })
