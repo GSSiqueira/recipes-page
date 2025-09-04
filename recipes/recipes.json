@@ -222,6 +222,82 @@
                     "4": "Leve à geladeira por 1 hora antes de servir com salgadinhos de milho ou outros acompanhamentos."
                 }
             }
+        },
+        {
+            "id": "3",
+            "name": "Molho de Cachorro-Quente",
+            "category": "prato principal",
+            "details": {
+                "prepTime": "Aproximadamente 20 min",
+                "portions": "Não especificado",
+                "source": "https://www.youtube.com/watch?v=jrqSGmxgVt0"
+            },
+            "ingredients": {
+                "Completa": [
+                    {
+                        "name": "salsicha",
+                        "amount": "Aprox. 20 salsichas"
+                    },
+                    {
+                        "name": "azeite ou óleo",
+                        "amount": "a gosto"
+                    },
+                    {
+                        "name": "cebola picada",
+                        "amount": "1 unidade"
+                    },
+                    {
+                        "name": "dentes de alho espremidos",
+                        "amount": "2"
+                    },
+                    {
+                        "name": "extrato de tomate",
+                        "amount": "3 colheres (sopa) ou 50 g"
+                    },
+                    {
+                        "name": "tomate picado",
+                        "amount": "200 g ou 2-3 tomates"
+                    },
+                    {
+                        "name": "água",
+                        "amount": "1 xícara (240 ml)"
+                    },
+                    {
+                        "name": "sal",
+                        "amount": "a gosto"
+                    },
+                    {
+                        "name": "páprica ou orégano",
+                        "amount": "opcional"
+                    },
+                    {
+                        "name":"folhas de louro",
+                        "amount":"opcional"
+                    },
+                    {
+                        "name": "cheiro-verde (salsinha)",
+                        "amount": "opcional"
+                    },
+                    {
+                        "name": "milho, ervilha, azeitona",
+                        "amount": "opcional"
+                    }
+                ]
+            },
+            "instructions": {
+                "Completa": {
+                    "1": "Comece fervendo a salsicha em rodelas (ou inteira, se preferir) para retirar o excesso de gordura.",
+                    "2": "Coloque a salsicha picada em uma panela, cubra com água e ligue o fogo. Quando a água ferver, conte 3 minutos, desligue o fogo e escorra a água.",
+                    "3": "Na mesma panela, coloque um fio generoso de azeite e refogue o alho e a cebola picadinha até ela começar a ficar transparente.",
+                    "4": "Adicione o extrato de tomate e deixe-o refogar por cerca de 3 minutos, dando uma leve 'pegada' no fundo da panela.",
+                    "5": "Em seguida, coloque o tomate picado e mexa. Adicione a água e o sal, misture bem e deixe cozinhar por 10 a 15 minutos em fogo baixo com a panela tampada. A cada 3 ou 4 minutos, mexa o molho para não queimar.",
+                    "6": "Após o cozimento do molho, adicione a salsicha já cozida e o cheiro-verde (opcional). Se desejar, adicione outros ingredientes, como milho, ervilha ou azeitona.",
+                    "7": "Cozinhe por mais 4 minutos para a salsicha pegar o gosto do molho e sirva a seguir com pão de leite e batata palha."
+                }
+            },
+            "extras": {
+                "1":"Também é possível cozinhar as salsichas diretamente no molho de tomate para agilizar o processo. Basta adicionar as salsichas cortadas ou inteiras quando o molho ainda estiver cozinhando, cerca de 5 minutos antes de finalizar."
+            }
         }
     ]
 }
