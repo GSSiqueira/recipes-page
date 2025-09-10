@@ -305,8 +305,8 @@
             "name": "Frango Xadrez",
             "category": "principais",
             "details": {
-                "prepTime": "20 min",
-                "portions": "variavel",
+                "prepTime": "Aprox. 30 min",
+                "portions": "Aprox. 4",
                 "source": "https://www.youtube.com/watch?v=iF6-AVFdAhk"
             },
             "ingredients": {
@@ -337,14 +337,18 @@
                     },
                     {
                         "name": "amendoim torrado",
-                        "amount": "a gosto"
+                        "amount": "100g"
                     },
                     {
                         "name": "cebolinha",
                         "amount": "a gosto"
+                    },
+                    {                   
+                        "name": "azeite/óleo/manteiga",
+                        "amount": "a gosto"
                     }
                 ],
-                "Molho e Tempero": [
+                "Molho": [
                     {
                         "name": "shoyu",
                         "amount": "1/2 xícara"
@@ -359,10 +363,6 @@
                     },
                     {
                         "name": "pimenta do reino",
-                        "amount": "a gosto"
-                    },
-                    {
-                        "name": "azeite/óleo/manteiga",
                         "amount": "a gosto"
                     },
                     {
