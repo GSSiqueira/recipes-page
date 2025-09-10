@@ -1,4 +1,5 @@
 {
+    "lastid": "4",
     "recipes": [
         {
             "id": "0",
@@ -297,6 +298,88 @@
             },
             "extras": {
                 "1": "Também é possível cozinhar as salsichas diretamente no molho de tomate para agilizar o processo. Basta adicionar as salsichas cortadas ou inteiras quando o molho ainda estiver cozinhando, cerca de 5 minutos antes de finalizar."
+            }
+        },
+        {
+            "id": "4",
+            "name": "Frango Xadrez",
+            "category": "principais",
+            "details": {
+                "prepTime": "20 min",
+                "portions": "variavel",
+                "source": "https://www.youtube.com/watch?v=iF6-AVFdAhk"
+            },
+            "ingredients": {
+                "Principal": [
+                    {
+                        "name": "frango",
+                        "amount": "500g"
+                    },
+                    {
+                        "name": "amido de milho",
+                        "amount": "2 colheres de sopa"
+                    },
+                    {
+                        "name": "cebola",
+                        "amount": "1"
+                    },
+                    {
+                        "name": "pimentão amarelo",
+                        "amount": "1"
+                    },
+                    {
+                        "name": "pimentão verde",
+                        "amount": "1"
+                    },
+                    {
+                        "name": "pimentão vermelho",
+                        "amount": "1"
+                    },
+                    {
+                        "name": "amendoim torrado",
+                        "amount": "a gosto"
+                    },
+                    {
+                        "name": "cebolinha",
+                        "amount": "a gosto"
+                    }
+                ],
+                "Molho e Tempero": [
+                    {
+                        "name": "shoyu",
+                        "amount": "1/2 xícara"
+                    },
+                    {
+                        "name": "água",
+                        "amount": "1/2 xícara"
+                    },
+                    {
+                        "name": "sal",
+                        "amount": "a gosto"
+                    },
+                    {
+                        "name": "pimenta do reino",
+                        "amount": "a gosto"
+                    },
+                    {
+                        "name": "azeite/óleo/manteiga",
+                        "amount": "a gosto"
+                    },
+                    {
+                        "name": "pimenta calabresa (opcional)",
+                        "amount": "a gosto"
+                    }
+                ]
+            },
+            "instructions": {
+                "Completa": {
+                    "1": "Corte o frango em cubos, tempere com sal e pimenta do reino. Adicione o amido de milho e misture bem.",
+                    "2": "Em uma panela grande, frite o frango em fogo alto até dourar e formar uma crosta. Retire e reserve.",
+                    "3": "Na mesma panela, adicione a cebola e os pimentões cortados em cubos. Frite por cerca de três minutos.",
+                    "4": "Misture o shoyu com a água e reserve para o molho.",
+                    "5": "Retorne o frango à panela, adicione o molho de shoyu e água. Cozinhe por 3 a 5 minutos, até o molho engrossar e o frango terminar de cozinhar.",
+                    "6": "Finalize com amendoim torrado e cebolinha por cima."
+                }
             }
         }
     ]

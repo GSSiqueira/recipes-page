@@ -76,8 +76,8 @@
                 const sourceLink = document.getElementById('source');
                 sourceLink.href = result.details.source;
 
-                for (step in result.ingredients) {
-                    const directionsList = document.createElement('ol');
+                for (step in result.instructions) {
+                    const instructionsList = document.createElement('ol');
                     if (step !== "Completa") {
                         const stepTitle = document.createElement('h5');
                         stepTitle.textContent = `${step}`;
@@ -86,9 +86,9 @@
                     Object.values(result.instructions[step]).forEach(instruction => {
                         const li = document.createElement('li');
                         li.textContent = instruction;
-                        directionsList.appendChild(li);
+                        instructionsList.appendChild(li);
                     });
-                    document.getElementById('directions').appendChild(directionsList);
+                    document.getElementById('directions').appendChild(instructionsList);
                 }
 
                 const extras = document.getElementById("dicas");
