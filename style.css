@@ -25,15 +25,16 @@
         
     }
 
-    main #top-wrapper #details > ul{
+    main #details > ul{
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
     }
 
-    main #top-wrapper #details > ul > li{
+    main #details > ul > li{
         margin-right: 10px;
     }
+
 }
 
 * {
