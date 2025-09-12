@@ -14,7 +14,7 @@
     --font-main: "Roboto", sans-serif;
 }
 
-@media screen and (min-width: 820px){
+@media screen and (min-width: 810px){
 
     main{
         width: 800px;
@@ -25,8 +25,14 @@
         
     }
 
-    main #top-wrapper > section{
-        max-width: 390px;
+    main #top-wrapper #details > ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    main #top-wrapper #details > ul > li{
+        margin-right: 10px;
     }
 }
 
@@ -72,7 +78,7 @@ header nav a{
 }
 
 header h1{
-    font-size: 3.0em;
+    font-size: 3.2em;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
     color: var(--main-color);
     margin: 10px 5px;   
