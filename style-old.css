@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*Fonts v1*/
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kumbh+Sans:wght@100..900&display=swap'); */
+
 :root{
     --backg-color: white;
     --section-color: #f0ebd9;
@@ -19,16 +22,18 @@
     main{
         width: 800px;
     }
-
-    main section{
-        font-size: 1em;
-        
-    }
-
-    main #top-wrapper > section{
-        max-width: 390px;
-    }
 }
+
+/* Pallete 1
+:root{
+    --backg-color: white;
+    --section-color: #f0ebd9;
+    --main-color:#F23005;
+    --secondary-color: #F25C05;
+    --highlight-color:#0F0C59;
+    --strong-color: #0c0e2b;
+}
+*/
 
 * {
     margin: 0px;
@@ -39,48 +44,42 @@
 html, body{
     background-color: var(--backg-color);
     font-family: var(--font-main);
-    font-size: 1em;
+    font-size: 0.9em;
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 
 header{
-    width: 100%;
     padding: 10px 0px;
     margin-bottom: 1px;
     border-bottom: 1px solid var(--main-color);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);   
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.204);   
     font-family: var(--font-titles);
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    flex-wrap: no-wrap;
 
 }
 
-header nav > ul{
+nav > ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
 }
-
-header nav a{
-    font-size: 1.7em;
+nav a{
+    font-size: 2.0em;
 }
 
-header h1{
-    font-size: 3.0em;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
-    color: var(--main-color);
-    margin: 10px 5px;   
-    text-align: center;
-    font-weight: 600;
+nav a:hover{
+    text-decoration: underline;
 }
 
 main{
+    
     padding: 10px 5px;
     margin: 20px 0px;
     border-radius: 10px;
@@ -88,20 +87,20 @@ main{
     display: flex;
     flex-flow: column nowrap;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+    align-self: center;
     flex: auto;
 }
 
-main section{
+section{
     margin: 4px;
     padding: 30px 30px;
     background-color: var(--section-color);
+    flex-grow: 1;
     border-radius: 10px;
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.204);
-    font-size: 1.1em;
-    flex-grow: 1;
 }
 
-main aside{  
+aside{  
     padding: 30px 30px;
     margin: 10px 0px;
     border: 3px solid var(--highlight-color);
@@ -109,66 +108,7 @@ main aside{
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.204);
 }
 
-main ul > li{
-    list-style: none;
-}
-
-main ul > li::before{
-    content: "🔸";
-    padding-right: 4px;
-}
-
-main h2{
-    font-family: var(--font-titles);
-    font-size: 2.0em;
-    color: var(--main-color);
-    text-align: center;
-    margin: 10px 5px 10px 5px;
-    font-weight: 600;
-}
-
-main h3{
-    margin: 0px 5px 10px 5px; 
-    font-size: 1.5em;
-    font-weight: bold;
-    color: var(--strong-color);
-}
-
-main h4,h5{
-    padding: 5px 0px;;
-    margin: 10px 0px;   
-    font-size: 1.2em;
-    color: var(--strong-color);
-    border-top: 4px solid var(--highlight-color);
-    border-bottom: 4px solid var(--highlight-color);
-}
-
-main #directions  li{
-    margin: 20px 0px;
-}
-
-main #top-wrapper{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-}
-
-main #goals p{
-    font-size: 1.2em;
-    padding: 3px 0px;
-}
-
-main #recipe-list li{
-    padding: 6px;
-}
-
-main #recipe-list a{
-    padding: 5px;
-    font-weight: bold;
-}
-
 footer{
-    width: 100%;
     background-color: var(--strong-color);
     padding: 10px 10px;
 }
@@ -183,8 +123,21 @@ footer a{
     font-weight: bold;
 }
 
+footer a:hover{
+    text-decoration: underline;
+}
+
 ul,ol {
     list-style-position: inside;
+}
+
+main ul > li{
+    list-style: none;
+}
+
+main ul > li::before{
+    content: "🔸";
+    padding-right: 4px;
 }
 
 ol li::marker {
@@ -196,6 +149,10 @@ ol li::marker {
 li{
     margin: 10px 0px;
 }
+
+#directions  li{
+    margin: 20px 0px;
+}
     
 a{
     text-decoration: none;
@@ -204,8 +161,51 @@ a{
     color: var(--highlight-color);
 }
 
-a:hover{
+main a:hover{
     text-decoration: underline;
 }
 
+h1{
+    font-size: 3.5em;
+    color: var(--main-color);
+    margin: 10px 5px;   
+    text-align: center;
+    font-weight: 600;
+}
 
+h2{
+    font-family: var(--font-titles);
+    font-size: 2.0em;
+    color: var(--main-color);
+    text-align: center;
+    margin: 10px 5px 10px 5px;
+    font-weight: 600;
+}
+
+h3{
+    
+    margin: 0px 5px 10px 5px; 
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--strong-color);
+}
+
+h4,h5{
+    padding: 5px 0px;;
+    margin: 10px 0px;   
+    font-size: 1.2em;
+    color: var(--strong-color);
+    border-top: 3px solid var(--highlight-color);
+    border-bottom: 3px solid var(--highlight-color);
+}
+
+#top-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+#goals p{
+    font-size: 1.2em;
+    padding: 3px 0px;
+}
