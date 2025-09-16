@@ -1,5 +1,5 @@
 {
-    "lastid": "4",
+    "lastid": "5",
     "recipes": [
         {
             "id": "0",
@@ -343,7 +343,7 @@
                         "name": "cebolinha",
                         "amount": "a gosto"
                     },
-                    {                   
+                    {
                         "name": "azeite/óleo/manteiga",
                         "amount": "a gosto"
                     }
@@ -379,6 +379,62 @@
                     "4": "Misture o shoyu com a água e reserve para o molho.",
                     "5": "Retorne o frango à panela, adicione o molho de shoyu e água. Cozinhe por 3 a 5 minutos, até o molho engrossar e o frango terminar de cozinhar.",
                     "6": "Finalize com amendoim torrado e cebolinha por cima."
+                }
+            }
+        },
+        {
+            "id": "5",
+            "name": "Patê de atum",
+            "category": "entradas",
+            "details": {
+                "prepTime": "Até 1 hora",
+                "portions": "Até 4 porções",
+                "source": "https://panelinha.com.br/receita/pate-de-atum"
+            },
+            "ingredients": {
+                "Completa": [
+                    {
+                        "name": "atum ralado em água",
+                        "amount": "1 lata (170 g)"
+                    },
+                    {
+                        "name": "maionese caseira",
+                        "amount": "½ xícara (chá)"
+                    },
+                    {
+                        "name": "alcaparra",
+                        "amount": "1½ colher (sopa)"
+                    },
+                    {
+                        "name": "cebola",
+                        "amount": "½ unidade"
+                    },
+                    {
+                        "name": "raspas de limão",
+                        "amount": "raspas de 1 unidade"
+                    },
+                    {
+                        "name": "suco de limão",
+                        "amount": "1/2 unidade"
+                    },
+                    {
+                        "name": "hortelã",
+                        "amount": "2 ramos picados fino"
+                    },
+                    {
+                        "name": "azeite",
+                        "amount": "a gosto"
+                    }
+                ]
+            },
+            "instructions": {
+                "Completa": {
+                    "1": "Descasque e pique fino a cebola. Pique fino as alcaparras. Leve uma frigideira pequena ao fogo médio.",
+                    "2": "Quando aquecer, regue com 1 colher (sopa) de azeite, junte a cebola e refogue por 2 minutos até murchar. Acrescente as alcaparras e mexa por 1 minuto para perfumar. Desligue o fogo, transfira para uma tigela e deixe esfriar.",
+                    "3": "Abra a lata de atum e escorra a água com uma peneira. Aperte bem o atum com as costas de uma colher para tirar o excesso de líquido.",
+                    "4": "Junte o atum à cebola refogada, acrescente a maionese, as raspas de limão e misture bem.",
+                    "5": "Leve para a geladeira por pelo menos 1 hora para ser servido frio.",
+                    "6": "Misture a hortelã apenas na hora de servir."
                 }
             }
         }
