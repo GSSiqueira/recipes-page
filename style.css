@@ -14,29 +14,6 @@
     --font-main: "Roboto", sans-serif;
 }
 
-@media screen and (min-width: 810px){
-
-    main{
-        width: 800px;
-    }
-
-    main section{
-        font-size: 1em;
-        
-    }
-
-    main #details > ul{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
-
-    main #details > ul > li{
-        margin-right: 10px;
-    }
-
-}
-
 * {
     margin: 0px;
     padding: 0px;
@@ -51,168 +28,57 @@ html, body{
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 > a:hover  {
+    text-decoration: none;
 }
 
 header{
     width: 100%;
-    padding: 10px 0px;
-    margin-bottom: 1px;
-    border-bottom: 1px solid var(--main-color);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);   
+    border-bottom: 2px solid var(--main-color);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
     font-family: var(--font-titles);
+}
+
+nav{
+    padding: 10px;
     display: flex;
-    flex-flow: column nowrap;
-
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav > ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
+nav > a{
+    margin: 0px 4px;
 }
 
-header nav a{
-    font-size: 1.7em;
-}
-
-header h1{
-    font-size: 3.2em;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+h1 > a{
+    font-size: 0.8em;
     color: var(--main-color);
-    margin: 10px 5px;   
     text-align: center;
-    font-weight: 600;
+}
+
+h1{
+    flex: 0 0 100px;
 }
 
 main{
-    padding: 10px 5px;
-    margin: 20px 0px;
-    border-radius: 10px;
-    border: 1px solid var(--main-color);
     display: flex;
     flex-flow: column nowrap;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
-    flex: auto;
+    padding: 15px;
 }
 
-main section{
-    margin: 4px;
-    padding: 30px 30px;
-    background-color: var(--section-color);
-    border-radius: 10px;
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.204);
-    font-size: 1.1em;
-    flex-grow: 1;
-}
-
-main aside{  
-    padding: 30px 30px;
-    margin: 10px 0px;
-    border: 3px solid var(--highlight-color);
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.204);
-}
-
-main ul > li{
-    list-style: none;
-}
-
-main ul > li::before{
-    content: "🔸";
-    padding-right: 4px;
-}
-
-main h2{
-    font-family: var(--font-titles);
-    font-size: 2.0em;
-    color: var(--main-color);
-    text-align: center;
-    margin: 10px 5px 10px 5px;
-    font-weight: 600;
-}
-
-main h3{
-    margin: 0px 5px 10px 5px; 
-    font-size: 1.5em;
-    font-weight: bold;
-    color: var(--strong-color);
-}
-
-main h4,h5{
-    padding: 5px 0px;;
-    margin: 10px 0px;   
-    font-size: 1.2em;
-    color: var(--strong-color);
-    border-top: 4px solid var(--highlight-color);
-    border-bottom: 4px solid var(--highlight-color);
-}
-
-main #directions  li{
-    margin: 20px 0px;
-}
-
-main #top-wrapper{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-}
-
-main #goals p{
-    font-size: 1.2em;
-    padding: 3px 0px;
-}
-
-main #recipe-list li{
-    padding: 6px;
-}
-
-main #recipe-list a{
-    padding: 5px;
-    font-weight: bold;
-}
-
-footer{
-    width: 100%;
-    background-color: var(--strong-color);
-    padding: 10px 10px;
-}
-
-footer > p{
-    color: white;
-    text-align: center;
-}
-
-footer a{
-    color: white;
-    font-weight: bold;
-}
-
-ul,ol {
-    list-style-position: inside;
-}
-
-ol li::marker {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: var(--highlight-color);
-}
-
-li{
-    margin: 10px 0px;
-}
-    
-a{
-    text-decoration: none;
-    font-size: 1.1em;
-    font-size: bold;
-    color: var(--highlight-color);
-}
-
-a:hover{
-    text-decoration: underline;
-}
 
 
