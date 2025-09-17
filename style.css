@@ -28,10 +28,11 @@ html, body{
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 a{
-    display: block;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bold;
@@ -66,12 +67,15 @@ nav > a{
 
 h1 > a{
     font-size: 0.8em;
+    font-weight: bolder;
     color: var(--main-color);
     text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 h1{
     flex: 0 0 100px;
+    text-align: center;
 }
 
 main{
@@ -80,5 +84,36 @@ main{
     padding: 15px;
 }
 
+section{
+    padding: 10px;
+    background-color: var(--section-color);
+    border-radius: 15px;
+}
+
+h2{
+    font-size: 1.4em;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h3,h4{
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    margin: 5px 0px;
+}
+
+footer{
+    background-color: var(--strong-color);
+    color: white;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+}
 
 
