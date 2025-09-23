@@ -3,6 +3,7 @@
 
     nav{
         margin: auto;
+        justify-content: space-around;
     }
   
     nav, main{
