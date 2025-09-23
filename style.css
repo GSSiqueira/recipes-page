@@ -102,6 +102,11 @@ main ul > li::before{
     padding-right: 4px;
 }
 
+#details > ul > li::before{
+    content: "";
+    padding-right: 0px;
+}
+
 section{
     padding: 20px;
     background-color: var(--section-color);
@@ -130,14 +135,14 @@ h2{
 }
 
 h3,h4{
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: var(--secondary-color);
     margin: 5px 0px;
 }
 
 h4,h5{
     padding: 5px 0px;;
-    margin: 10px 0px;   
+    margin: 15px 0px;   
     font-size: 1.2em;
     color: var(--strong-color);
     border-top: 3px solid var(--highlight-color);
