@@ -23,7 +23,7 @@
 html, body{
     background-color: var(--backg-color);
     font-family: var(--font-main);
-    font-size: 1em;
+    font-size: 1.1em;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -103,9 +103,15 @@ main ul > li::before{
 }
 
 section{
-    padding: 10px;
+    padding: 20px;
     background-color: var(--section-color);
     border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+#recipe-list{
+    font-size: 1.1  zem;
 }
 
 ol li::marker {
@@ -115,11 +121,12 @@ ol li::marker {
 }
 
 h2{
-    font-size: 1.4em;
-    color: var(--secondary-color);
+    font-size: 1.8em;
+    color: var(--main-color);
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h3,h4{
@@ -137,6 +144,13 @@ h4,h5{
     border-bottom: 3px solid var(--highlight-color);
 }
 
+aside{
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px; 
+    border: 1px solid var(--strong-color);
+}
+
 footer{
     background-color: var(--strong-color);
     color: white;
@@ -148,5 +162,4 @@ footer{
 footer a{
     color: white;
 }
-
 
