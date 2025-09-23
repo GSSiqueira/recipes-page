@@ -35,10 +35,11 @@ html, body{
 a{
     text-decoration: none;
     font-weight: bold;
+    color: var(--highlight-color);
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline;   
 }
 
 h1 > a:hover  {
@@ -100,6 +101,11 @@ ol{
 main ul > li::before{
     content: "🔸";
     padding-right: 4px;
+}
+
+#details > ul{
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 #details > ul > li::before{
