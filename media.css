@@ -1,8 +1,8 @@
 @charset "utf-8";
-@media screen and (min-width: 810px){
+@media screen and (min-width: 992px){
 
     html,body{
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     nav{
@@ -11,7 +11,7 @@
     }
   
     nav, main{
-        width: 800px;
+        width: 992px;
     }
 
     #details > ul{
