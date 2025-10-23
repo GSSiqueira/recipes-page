@@ -1,5 +1,5 @@
 {
-    "lastid": "5",
+    "lastid": "6",
     "recipes": [
         {
             "id": "0",
@@ -435,6 +435,86 @@
                     "4": "Junte o atum à cebola refogada, acrescente a maionese, as raspas de limão e misture bem.",
                     "5": "Leve para a geladeira por pelo menos 1 hora para ser servido frio.",
                     "6": "Misture a hortelã apenas na hora de servir."
+                }
+            }
+        },
+        {
+            "id": "6",
+            "name": "Peixe Assado Mediterrâneo",
+            "category": "principais",
+            "details": {
+                "prepTime": "45 min",
+                "portions": "2",
+                "source": "https://www.youtube.com/watch?v=O1mSXuIXih8"
+            },
+            "ingredients": {
+                "Peixe": [
+                    {
+                        "name": "Filé de peixe (Tilápia)",
+                        "amount": "Aprox. 400 g (3 filés)"
+                    },
+                    {
+                        "name": "Sal",
+                        "amount": "A gosto"
+                    },
+                    {
+                        "name": "Pimenta do Reino",
+                        "amount": "A gosto"
+                    },
+                    {
+                        "name": "Limão (suco)",
+                        "amount": "1/2 a 1 unidade"
+                    }
+                ],
+                "Vinagrete Mediterrâneo": [
+                    {
+                        "name": "Tomate Cereja",
+                        "amount": "Cerca de 150 g"
+                    },
+                    {
+                        "name": "Cebola Roxa",
+                        "amount": "1 pequena"
+                    },
+                    {
+                        "name": "Azeitona Preta",
+                        "amount": "A gosto"
+                    },
+                    {
+                        "name": "Azeitona Verde",
+                        "amount": "A gosto"
+                    },
+                    {
+                        "name": "Salsinha",
+                        "amount": "A gosto"
+                    },
+                    {
+                        "name": "Azeite",
+                        "amount": "50 a 60 ml no total"
+                    },
+                    {
+                        "name": "Sal",
+                        "amount": "A gosto"
+                    }
+                ]
+            },
+            "instructions": {
+                "Preparo Inicial": {
+                    "1": "Tempere os filés de peixe (cerca de 400g) com sal e pimenta do reino dos dois lados. Adicione o suco de 1/2 a 1 limão.",
+                    "2": "Se puder, reserve o peixe temperado por uma hora para pegar mais sabor.",
+                    "3": "Pré-aqueça o forno a 200ºC."
+                },
+                "Preparo do Vinagrete": {
+                    "1": "Em uma tigela, misture os tomates cereja (cerca de 150g) cortados, a cebola roxa picada e as azeitonas picadas (preta e verde).",
+                    "2": "Adicione um pouco de salsinha picada.",
+                    "3": "Tempere a mistura com um pouco de sal e um fio de azeite para facilitar a mistura."
+                },
+                "Montagem e Forno": {
+                    "1": "Na forma que irá ao forno, coloque uma fina camada do vinagrete e um fio de azeite para untar o fundo e evitar que o peixe grude.",
+                    "2": "Posicione os filés de peixe temperados sobre a base.",
+                    "3": "Cubra os filés com o restante do vinagrete de azeitona e tomate.",
+                    "4": "Regue generosamente o prato com bastante azeite (o restante dos 50-60ml).",
+                    "5": "Leve ao forno pré-aquecido a 200ºC por 20 a 25 minutos. Fique de olho para não passar do ponto e o peixe ficar seco.",
+                    "6": "Retire do forno e polvilhe mais salsinha (ou coentro) por cima para finalizar e servir."
                 }
             }
         }
