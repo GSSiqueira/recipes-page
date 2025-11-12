@@ -1,5 +1,5 @@
 {
-    "lastid": "6",
+    "lastid": "7",
     "recipes": [
         {
             "id": "0",
@@ -515,6 +515,61 @@
                     "4": "Regue generosamente o prato com bastante azeite (o restante dos 50-60ml).",
                     "5": "Leve ao forno pré-aquecido a 200ºC por 20 a 25 minutos. Fique de olho para não passar do ponto e o peixe ficar seco.",
                     "6": "Retire do forno e polvilhe mais salsinha (ou coentro) por cima para finalizar e servir."
+                }
+            }
+        },
+        {
+            "id": "7",
+            "name": "Guacamole",
+            "category": "entradas",
+            "details": {
+                "prepTime": "15 min",
+                "portions": "6",
+                "source": "Pessoal"
+            },
+            "ingredients": {
+                "Completa": [
+                    {
+                        "name": "abacates maduros",
+                        "amount": "2 médios"
+                    },
+                    {
+                        "name": "cebola roxa",
+                        "amount": "1/2 unidade"
+                    },
+                    {
+                        "name": "tomates maduros",
+                        "amount": "4 unidades"
+                    },
+                    {
+                        "name": "limão",
+                        "amount": "1 unidade"
+                    },
+                    {
+                        "name": "sal",
+                        "amount": "a gosto"
+                    },
+                    {
+                        "name": "coentro",
+                        "amount": "a gosto"
+                    },
+                    {
+                        "name": "pimenta dedo-de-moça",
+                        "amount": "opcional"
+                    }
+                ]
+            },
+            "instructions": {
+                "Completa": {
+                    "1": "Lave e seque o coentro e os tomates.",
+                    "2": "Retire as sementes dos tomates e pique-os em cubos pequenos. Reserve.",
+                    "3": "Pique a cebola roxa em cubos bem pequenos. Reserve.",
+                    "4": "Pique o coentro e reserve.",
+                    "5": "Numa tigela grande, coloque a polpa dos 2 abacates e amasse bem, de preferência usando um amassador de batatas.",
+                    "6": "Em seguida, misture os tomates, a cebola e o coentro e misture bem.",
+                    "7": "Esprema o limão e adicione o sal a gosto.",
+                    "8": "Caso opte por usar pimenta dedo-de-moça, retire as sementes e pique-a bem pequeno. Em seguida, adicione à tigela.",
+                    "9": "Misture bem e sirva em seguida."
                 }
             }
         }

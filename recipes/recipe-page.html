@@ -74,7 +74,15 @@
                 document.getElementById('prep-time').textContent = result.details.prepTime;
                 document.getElementById('portions').textContent = result.details.portions;
                 const sourceLink = document.getElementById('source');
-                sourceLink.href = result.details.source;
+
+                if(result.details.source.toUpperCase() === "PESSOAL"){
+                    sourceLink.href="#";
+                    sourceLink.target="_self"
+                    sourceLink.textContent = "Receita Pessoal"
+                }
+                else{
+                    sourceLink.href = result.details.source;
+                }
 
                 for (step in result.instructions) {
                     const instructionsList = document.createElement('ol');
