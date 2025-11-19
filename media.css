@@ -2,7 +2,7 @@
 @media screen and (min-width: 992px){
 
     html,body{
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     nav{
@@ -20,4 +20,18 @@
         justify-content: space-around;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    #recipe-list {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
 }

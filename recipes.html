@@ -12,22 +12,22 @@
 
 <body>
     <header>
-        <nav>
+        <nav role="navigation" aria-label="Navegação principal">
             <a href="index.html">Início</a>
-            <h1><a href="index.html">Receitas do Siq</a></h1>
+            <h1 tabindex="0"><a href="index.html">Receitas do Siq</a></h1>
             <a href="recipes.html">Receitas</a>
         </nav>
     </header>
-    <main>
-        <h2>Lista de Receitas</h2>
-        <section id="recipe-list">
-            <h3>Categorias</h3>
-            <h4>Entradas</h4>
-            <ul id="entradas">
+    <main aria-label="Conteúdo principal">
+        <h2 id="page-title">Lista de Receitas</h2>
+        <section id="recipe-list" aria-labelledby="page-title">
+            <h2>Categorias</h2>
+            <h3>Entradas</h3>
+            <ul id="entradas" aria-label="Receitas de entrada">
 
             </ul>
-            <h4>Pratos Principais</h4>
-            <ul id="principais">
+            <h3>Pratos Principais</h3>
+            <ul id="principais" aria-label="Receitas de pratos principais">
             </ul>
         </section>
     </main>
@@ -50,6 +50,7 @@
                     const link = document.createElement('a');
                     link.textContent = recipe.name;
                     link.href = `./recipes/recipe-page.html?id=${recipe.id}`;
+                    link.setAttribute('aria-label', `Ver receita de ${recipe.name}`);
                     recipeLi.appendChild(link);
 
                     categoryList.appendChild(recipeLi);

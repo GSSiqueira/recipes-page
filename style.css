@@ -5,10 +5,10 @@
 :root{
     --backg-color: white;
     --section-color: #f1f0e8;
-    --main-color:#f1860a;
+    --main-color: #e67e00;
     --secondary-color: #F25C05;
-    --highlight-color:#0F0C59;
-    --strong-color: #0c0e2b;
+    --highlight-color: #0d0a4d;
+    --strong-color: #0a0c21;
     
     --font-titles: "Poppins", sans-serif;
     --font-main: "Roboto", sans-serif;
@@ -40,6 +40,11 @@ a{
 
 a:hover {
     text-decoration: underline;   
+}
+
+a:focus, a:focus-visible {
+    outline: 2px solid var(--highlight-color);
+    border-radius: 2px;
 }
 
 h1 > a:hover  {
@@ -127,7 +132,7 @@ main ul > li::before{
 }
 
 #recipe-list{
-    font-size: 1.1  zem;
+    font-size: 1.1em;
 }
 
 ol li::marker {
@@ -137,7 +142,7 @@ ol li::marker {
 }
 
 h2{
-    font-size: 2.8rem;
+    font-size: 2.5em;
     color: var(--main-color);
     font-weight: 400;
     margin-bottom: 10px;
@@ -146,7 +151,7 @@ h2{
 }
 
 h3,h4{
-    font-size: 1.4em;
+    font-size: 1.8em;
     color: var(--secondary-color);
     margin-bottom: 15px;
 }
@@ -154,7 +159,7 @@ h3,h4{
 h4,h5{
     padding: 5px 0px;;
     margin-bottom: 15px;   
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: var(--strong-color);
     border-top: 3px solid var(--highlight-color);
     border-bottom: 3px solid var(--highlight-color);
