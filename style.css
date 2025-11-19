@@ -77,22 +77,50 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: var(--spacing-sm);
+    position: relative;
+    /* For absolute dropdown positioning */
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    width: auto;
 }
 
 nav h1 {
     margin: 0;
     display: flex;
     align-items: center;
-    /* Allow logo to be the center piece */
-    order: 0;
 }
 
 .logo {
     height: 100px;
-    /* Increased size */
     width: auto;
     display: block;
     transition: height 0.3s ease;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-primary);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-md);
 }
 
 nav a {
@@ -101,35 +129,61 @@ nav a {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: var(--spacing-xs) var(--spacing-sm);
+    color: var(--color-text);
 }
 
 /* Responsive Navbar */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        gap: var(--spacing-sm);
-        padding: var(--spacing-md) var(--spacing-sm);
+        padding: var(--spacing-sm);
     }
 
-    nav h1 {
-        order: -1;
-        /* Ensure logo is always on top */
-        margin-bottom: var(--spacing-xs);
+    .nav-header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-card-bg);
+        flex-direction: column;
+        align-items: center;
+        padding: var(--spacing-md) 0;
+        box-shadow: var(--shadow-hover);
+        gap: var(--spacing-sm);
+
+        /* Animation States */
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        /* Prevent clicking when hidden */
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        z-index: 1000;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
 
     .logo {
-        height: 80px;
-        /* Slightly smaller on mobile but still prominent */
+        height: 60px;
+        /* Smaller on mobile */
     }
 
     nav a {
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid var(--color-border);
-    }
-
-    nav a:last-child {
-        border-bottom: none;
+        padding: var(--spacing-sm);
     }
 }
 

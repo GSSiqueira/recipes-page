@@ -18,9 +18,18 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html">Início</a>
-            <h1><a href="../index.html"><img src="../images/logo.png" alt="Receitas do Siq" class="logo"></a></h1>
-            <a href="../recipes.html">Receitas</a>
+            <div class="nav-header">
+                <h1><a href="../index.html"><img src="../images/logo.png" alt="Receitas do Siq" class="logo"></a></h1>
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Início</a>
+                <a href="../recipes.html">Receitas</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -52,6 +61,7 @@
     <footer>
         <p>Desenvolvido por <a href="https://github.com/GSSiqueira" target="_blank">Gabriel Siqueira</a> 2025</p>
     </footer>
+    <script src="../navbar.js"></script>
     <script>
         fetch('./recipes.json')
             .then(response => response.json())
