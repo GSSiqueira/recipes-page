@@ -22,11 +22,13 @@
 
 }
 
-@media screen and (max-width: 480px) {
-    #recipe-list {
-        padding: 15px;
+@media screen and (max-width: 768px) {
+    .recipe-card {
+        width: 100%;
     }
+}
 
+@media screen and (max-width: 480px) {
     h2 {
         font-size: 2em;
     }
