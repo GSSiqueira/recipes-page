@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receitas do Siq</title>
-    <link rel="stylesheet" href="../style.css?ver=1.0">
+    <title>Receitas do Siq - Warm & Cozy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?ver=2.0">
     <link rel="stylesheet" href="../media.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
-<body> 
+<body>
     <header>
         <nav>
             <a href="../index.html">Início</a>
@@ -19,28 +24,30 @@
         </nav>
     </header>
     <main>
-        <div id="top-wrapper">
-
+        <div class="recipe-header">
             <h2 id="recipe-title">Título da Receita</h2>
-            <section id="details">  
-                <!-- <h3>Detalhes</h3> -->
-                <ul>
-                    <li>Tempo de preparo: <span id="prep-time"></span></li>
-                    <li>Porções: <span id="portions"></span></li>
-                    <li>Fonte: <a id="source" href="#" target="_blank">Acesse Aqui</a></li>
-                </ul>
-            </section>
-            <section id="ingredients">
+            <div class="recipe-meta" id="details">
+                <span><i class="far fa-clock"></i> Tempo: <span id="prep-time"></span></span>
+                <span><i class="fas fa-utensils"></i> Porções: <span id="portions"></span></span>
+                <span>Fonte: <a id="source" href="#" target="_blank">Acesse Aqui</a></span>
+            </div>
+        </div>
+
+        <div class="recipe-content">
+            <section id="ingredients" class="ingredients-section">
                 <h3>Ingredientes</h3>
             </section>
-        </div>
-        <section id="directions">
-            <h3>Instruções</h3>
 
-        </section>
-        <aside id="dicas">
-            <h5>Dicas</h5>
-        </aside>
+            <div class="instructions-wrapper">
+                <section id="directions" class="instructions-section">
+                    <h3>Instruções</h3>
+                </section>
+
+                <aside id="dicas" class="card" style="margin-top: 2rem;">
+                    <h5>Dicas</h5>
+                </aside>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Desenvolvido por <a href="https://github.com/GSSiqueira" target="_blank">Gabriel Siqueira</a> 2025</p>
@@ -53,6 +60,8 @@
                 const result = data.recipes.filter(recipe => recipe.id === recipeId)[0];
 
                 document.getElementById('recipe-title').textContent = result.name;
+
+                // Ingredients
                 for (step in result.ingredients) {
                     const ingredientList = document.createElement('ul');
                     if (step !== "Completa") {
@@ -71,19 +80,21 @@
                     document.getElementById('ingredients').appendChild(ingredientList);
                 }
 
+                // Details
                 document.getElementById('prep-time').textContent = result.details.prepTime;
                 document.getElementById('portions').textContent = result.details.portions;
                 const sourceLink = document.getElementById('source');
 
-                if(result.details.source.toUpperCase() === "PESSOAL"){
-                    sourceLink.href="#";
-                    sourceLink.target="_self"
+                if (result.details.source.toUpperCase() === "PESSOAL") {
+                    sourceLink.href = "#";
+                    sourceLink.target = "_self"
                     sourceLink.textContent = "Receita Pessoal"
                 }
-                else{
+                else {
                     sourceLink.href = result.details.source;
                 }
 
+                // Instructions
                 for (step in result.instructions) {
                     const instructionsList = document.createElement('ol');
                     if (step !== "Completa") {
@@ -99,9 +110,10 @@
                     document.getElementById('directions').appendChild(instructionsList);
                 }
 
+                // Extras
                 const extras = document.getElementById("dicas");
-                if(result.extras){
-                    const extrasList =  document.createElement('ol');
+                if (result.extras) {
+                    const extrasList = document.createElement('ol');
                     Object.values(result.extras).forEach(extra => {
                         const li = document.createElement('li');
                         li.textContent = extra;
@@ -109,7 +121,7 @@
                     });
                     extras.appendChild(extrasList);
                 }
-                else{
+                else {
                     const extrasText = document.createElement('p');
                     extrasText.textContent = "Ainda não existem dicas para essa receita.";
                     extras.appendChild(extrasText);
