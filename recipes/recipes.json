@@ -1,5 +1,5 @@
 {
-    "lastid": "7",
+    "lastid": "8",
     "recipes": [
         {
             "id": "0",
@@ -165,7 +165,7 @@
         {
             "id": "2",
             "name": "Salsa Mexicana",
-            "category": "entradas",
+            "category": "acompanhamentos",
             "details": {
                 "prepTime": "5 min",
                 "portions": "4",
@@ -571,6 +571,76 @@
                     "8": "Caso opte por usar pimenta dedo-de-moça, retire as sementes e pique-a bem pequeno. Em seguida, adicione à tigela.",
                     "9": "Misture bem e sirva em seguida."
                 }
+            }
+        },
+        {
+            "id": "8",
+            "name": "Salada Jamaicana (Jamaican Slaw)",
+            "category": "acompanhamentos",
+            "details": {
+                "prepTime": "15 minutos de preparo + 1 hora de descanso",
+                "portions": "5 a 6 porções",
+                "source": "https://www.recipetineats.com/jamaican-slaw/#recipe"
+            },
+            "ingredients": {
+                "Completa": [
+                    {
+                        "name": "repolho verde",
+                        "amount": "4 xícaras cheias, finamente picado"
+                    },
+                    {
+                        "name": "cenoura",
+                        "amount": "2 xícaras desfiada (2 – 3 cenouras)"
+                    },
+                    {
+                        "name": "abacaxi picado",
+                        "amount": "1 1/2 xícaras, em cubos de 1cm (fresco ou enlatado em suco)"
+                    },
+                    {
+                        "name": "uvas-passas",
+                        "amount": "3/4 xícara (ou sultanas)"
+                    },
+                    {
+                        "name": "mostarda amarela",
+                        "amount": "3 colheres (sopa), Americana ou outra"
+                    },
+                    {
+                        "name": "vinagre de maçã",
+                        "amount": "1/3 xícara"
+                    },
+                    {
+                        "name": "azeite de oliva extra virgem",
+                        "amount": "1/3 xícara"
+                    },
+                    {
+                        "name": "jalapeño picado",
+                        "amount": "1 colher (sopa), sem sementes e finamente picado"
+                    },
+                    {
+                        "name": "cebolinha verde",
+                        "amount": "1/4 xícara, picada finamente"
+                    },
+                    {
+                        "name": "sal",
+                        "amount": "1/2 colher (chá) (de cozinha/kosher)"
+                    },
+                    {
+                        "name": "pimenta-do-reino preta",
+                        "amount": "1/4 colher (chá)"
+                    }
+                ]
+            },
+            "instructions": {
+                "Completa": {
+                    "1": "Agite todos os ingredientes do molho em uma jarra até ficarem combinados. Admire a cor amarela vibrante.",
+                    "2": "Coloque todos os ingredientes da salada (Slaw) em uma tigela grande. Despeje o molho e misture. Deixe descansar para murchar por pelo menos 1 hora.",
+                    "3": "Misture bem novamente para envolver no caldo e molho que se acumulou no fundo da tigela. Transfira para uma tigela de servir e sirva."
+                }
+            },
+            "extras": {
+                "1": "Abacaxi: Use fresco se estiver maduro e suculento. Caso contrário, use enlatado em suco (não em calda, que é muito doce).",
+                "2": "Mostarda: Use a mostarda amarela brilhante (como a Americana), que não é picante. Não use mostarda Inglesa picante, pois será muito forte.",
+                "3": "Preparo Antecipado: Misture todos os ingredientes da salada, exceto o abacaxi. Assim, a salada dura 2 dias na geladeira. Adicione o abacaxi pouco antes de servir."
             }
         }
     ]
