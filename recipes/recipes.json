@@ -593,16 +593,16 @@
                         "amount": "2 xícaras desfiada (2 – 3 cenouras)"
                     },
                     {
-                        "name": "abacaxi picado",
-                        "amount": "1 1/2 xícaras, em cubos de 1cm (fresco ou enlatado em suco)"
+                        "name": "abacaxi picado (fresco ou enlatado em suco)",
+                        "amount": "1 1/2 xícaras, em cubos de 1cm "
                     },
                     {
                         "name": "uvas-passas",
-                        "amount": "3/4 xícara (ou sultanas)"
+                        "amount": "3/4 xícara"
                     },
                     {
                         "name": "mostarda amarela",
-                        "amount": "3 colheres (sopa), Americana ou outra"
+                        "amount": "3 colheres sopa"
                     },
                     {
                         "name": "vinagre de maçã",
@@ -622,11 +622,11 @@
                     },
                     {
                         "name": "sal",
-                        "amount": "1/2 colher (chá) (de cozinha/kosher)"
+                        "amount": "1/2 colher chá"
                     },
                     {
                         "name": "pimenta-do-reino preta",
-                        "amount": "1/4 colher (chá)"
+                        "amount": "1/4 colher chá"
                     }
                 ]
             },
