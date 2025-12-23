@@ -1,5 +1,5 @@
 {
-    "lastid": "8",
+    "lastid": "9",
     "recipes": [
         {
             "id": "0",
@@ -641,6 +641,81 @@
                 "1": "Abacaxi: Use fresco se estiver maduro e suculento. Caso contrário, use enlatado em suco (não em calda, que é muito doce).",
                 "2": "Mostarda: Use a mostarda amarela brilhante (como a Americana), que não é picante. Não use mostarda Inglesa picante, pois será muito forte.",
                 "3": "Preparo Antecipado: Misture todos os ingredientes da salada, exceto o abacaxi. Assim, a salada dura 2 dias na geladeira. Adicione o abacaxi pouco antes de servir."
+            }
+        },
+        {
+            "id": "9",
+            "name": "Caponata de Berinjela",
+            "category": "entradas",
+            "details": {
+                "prepTime": "15 min",
+                "portions": "8",
+                "source": "https://www.youtube.com/watch?v=MVR8BtaRy48"
+            },
+            "ingredients": {
+                "Completa": [
+                    {
+                        "name": "berinjelas grandes",
+                        "amount": "2 unidades"
+                    },
+                    {
+                        "name": "cebolas grandes",
+                        "amount": "2 unidades"
+                    },
+                    {
+                        "name": "pimentão vermelho",
+                        "amount": "1/2 unidade"
+                    },
+                    {
+                        "name": "pimentão verde",
+                        "amount": "1/2 unidade"
+                    },
+                    {
+                        "name": "alho",
+                        "amount": "8 dentes"
+                    },
+                    {
+                        "name": "azeite de oliva",
+                        "amount": "1 xícara"
+                    },
+                    {
+                        "name": "vinagre",
+                        "amount": "2 colheres de sopa"
+                    },
+                    {
+                        "name": "orégano seco",
+                        "amount": "1 colher de sopa"
+                    },
+                    {
+                        "name": "sal",
+                        "amount": "1 colher de sopa rasa"
+                    },
+                    {
+                        "name": "pimenta-do-reino",
+                        "amount": "1 colher de chá"
+                    },
+                    {
+                        "name": "uva passa (opcional)",
+                        "amount": "1 xícara"
+                    },
+                    {
+                        "name": "pimenta dedo-de-moça ou calabresa",
+                        "amount": "a gosto"
+                    }
+                ]
+            },
+            "instructions": {
+                "Completa": {
+                    "1": "Corte as berinjelas em cubos pequenos e coloque-as diretamente em uma assadeira ou refratário que possa ir ao forno.",
+                    "2": "Pique as cebolas e os pimentões em cubos de tamanho semelhante e adicione à assadeira.",
+                    "3": "Em uma frigideira com um pouco de azeite, frite os dentes de alho picados até dourarem levemente para realçar o sabor.",
+                    "4": "Adicione o alho frito, o vinagre, o orégano, o sal, a pimenta-do-reino e a pimenta dedo-de-moça (sem sementes) aos vegetais na assadeira.",
+                    "5": "Regue tudo com uma xícara de azeite e misture bem todos os ingredientes.",
+                    "6": "Leve ao forno pré-aquecido a 230°C por um total de aproximadamente 60 minutos.",
+                    "7": "A cada 20 minutos, retire a assadeira do forno e misture bem os ingredientes para garantir um cozimento uniforme.",
+                    "8": "Aos 40 minutos de forno (na segunda mistura), adicione as uvas passas, misture e retorne ao forno para os últimos 20 minutos.",
+                    "9": "Retire do forno quando estiver com uma cor escura e bem cozida. O ideal é deixar descansar na geladeira de um dia para o outro antes de servir."
+                }
             }
         }
     ]
