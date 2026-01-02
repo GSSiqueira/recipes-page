@@ -133,9 +133,23 @@ nav a {
 }
 
 /* Responsive Navbar */
+@media (max-width: 1024px) {
+    header {
+        padding: var(--spacing-xs) 0;
+    }
+
+    nav {
+        padding: var(--spacing-xs);
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
+
 @media (max-width: 768px) {
     nav {
-        padding: var(--spacing-sm);
+        padding: var(--spacing-xs);
     }
 
     .nav-header {
@@ -176,7 +190,7 @@ nav a {
     }
 
     .logo {
-        height: 60px;
+        height: 50px;
         /* Smaller on mobile */
     }
 
